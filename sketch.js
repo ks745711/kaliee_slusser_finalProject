@@ -10,6 +10,8 @@ let grow = true;
 
 
 function setup() {
+  frameRate(60);
+  
   let cnv = createCanvas(windowWidth, windowHeight);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
